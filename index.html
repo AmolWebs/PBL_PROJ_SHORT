@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Carbon Footprint Calculator</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Carbon Footprint Calculator</h1>
+	<form id="carbon-calculator" class="carr">
+		<label for="transportation">Transportation Method:</label>
+		<select id="transportation">
+			<option value="0.5">Car (10 miles per day)</option>
+			<option value="0.1">Bus (10 miles per day)</option>
+			<option value="0">Bike or Walk (10 miles per day)</option>
+		</select>
+		<br>
+		<label for="diet">Diet:</label>
+		<select id="diet">
+			<option value="1.5">Meat-based diet</option>
+			<option value="0.5">Vegetarian diet</option>
+			<option value="0">Vegan diet</option>
+		</select>
+		<br>
+		<label for="home-energy">Home Energy:</label>
+		<select id="home-energy">
+			<option value="0.5">Electricity and gas (average usage)</option>
+			<option value="0.25">Electricity only (low usage)</option>
+			<option value="0.75">Gas only (high usage)</option>
+		</select>
+		<br>
+		<button type="button" id="calculate">Calculate Carbon Footprint</button>
+	</form>
+	<div id="results"></div>
+	<script src="script.js"></script>
+</body>
+</html>
